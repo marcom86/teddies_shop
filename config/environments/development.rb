@@ -1,4 +1,8 @@
 Rails.application.configure do
+  # Whitelist ngrok connections to development enviroment.
+  config.hosts << /1d9be9fd\.ngrok\.io/
+
+
   config.action_mailer.default_url_options = { host: "http://localhost:3000" }
   # Settings specified here will take precedence over those in config/application.rb.
 
